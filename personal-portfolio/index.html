@@ -49,6 +49,11 @@
           <h1 class="name" title="Teta Huguette">Teta Huguette</h1>
 
           <p class="title">Full Stack Developer</p>
+
+          <button class="theme-toggle-btn" data-theme-btn>
+            <ion-icon name="sunny-outline" class="sun"></ion-icon>
+            <ion-icon name="moon-outline" class="moon"></ion-icon>
+          </button>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -125,6 +130,15 @@
 
         <div class="separator"></div>
 
+        <div class="download-cv-container">
+          <a href="your-cv.pdf" download class="download-cv-btn">
+            <span>Download CV</span>
+            <ion-icon name="download-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="separator"></div>
+
         <ul class="social-list">
 
           <li class="social-item">
@@ -182,8 +196,7 @@
           </li>
 
           <li class="navbar-item">
-  <!-- This one opens the blog page/modal -->
-            <button class="navbar-link" id="openBlogPage">Blog</button>
+            <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
           <li class="navbar-item">
@@ -319,7 +332,7 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testo.man.jpg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar test1.webp" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
@@ -538,9 +551,7 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
               <span>2022 — 2026</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Currently pursuing a degree in Software Engineering, focusing on advanced algorithms, database management, and modern web development frameworks. My coursework involves hands-on projects, which are strengthening my expertise in creating scalable and efficient software solutions.
               </p>
 
             </li>
@@ -552,8 +563,7 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
               <span>2017 — 2021</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Completed my secondary education with a focus on science and mathematics, where I developed a strong analytical mindset and a foundational passion for technology and logical problem-solving.
               </p>
 
             </li>
@@ -565,9 +575,7 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
               <span>2014 — 2016</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                During my early high school years, I built a solid academic foundation and began exploring my interest in technology through various school projects and extracurricular activities.
               </p>
 
             </li>
@@ -595,37 +603,31 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
               <span>2025 — Present</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                As an active member of the Google Developer Group for AI, I collaborate on innovative projects, explore the latest advancements in machine learning, and engage with a community of forward-thinking tech enthusiasts.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Big tech solution intern</h4>
+              <h4 class="h4 timeline-item-title">Big Tech Solution Intern</h4>
 
               <span>2013 — 2015</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Gained valuable hands-on experience in a corporate tech environment, where I contributed to the development of internal tools and assisted senior developers in debugging and feature implementation.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">Web Designer</h4>
 
               <span>2010 — 2013</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Started my career by designing and building visually appealing websites for various clients. This role honed my skills in user interface design, user experience principles, and front-end development.
               </p>
 
             </li>
@@ -768,265 +770,193 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
 
     <ul class="project-list">
 
-      <li class="project-item  active" data-filter-item data-category="web development">
-        <a href="https://finance-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Finance</h3>
-
-          <p class="project-category">Web development</p>
-
-          <p class="project-description">
-            A comprehensive financial management dashboard with real-time analytics and expense tracking capabilities.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
-            <span class="tech-tag">Chart.js</span>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-1.jpg" alt="finance" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Finance</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Finance</h3>
+            <p class="project-category">Web development</p>
+            <p class="project-description">A comprehensive financial management dashboard with real-time analytics and expense tracking capabilities.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="web development">
-        <a href="https://orizon-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Orizon</h3>
-
-          <p class="project-category">Web development</p>
-
-          <p class="project-description">
-            Modern e-commerce platform featuring seamless checkout, inventory management, and customer analytics.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">Vue.js</span>
-            <span class="tech-tag">Express</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">Stripe API</span>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-2.png" alt="orizon" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Orizon</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Orizon</h3>
+            <p class="project-category">Web development</p>
+            <p class="project-description">Modern e-commerce platform featuring seamless checkout, inventory management, and customer analytics.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span><span class="tech-tag">Express</span><span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="web design">
-        <a href="https://fundo-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Fundo</h3>
-
-          <p class="project-category">Web design</p>
-
-          <p class="project-description">
-            Clean and minimal UI/UX design for a crowdfunding platform with interactive campaign visualization.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">Figma</span>
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
+      <li class="project-item active" data-filter-item data-category="web design">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Fundo</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Fundo</h3>
+            <p class="project-category">Web design</p>
+            <p class="project-description">Clean and minimal UI/UX design for a crowdfunding platform with interactive campaign visualization.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Figma</span><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="applications">
-        <a href="https://brawlhalla-app.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Brawlhalla</h3>
-
-          <p class="project-category">Applications</p>
-
-          <p class="project-description">
-            Gaming companion app with player stats, tournament brackets, and real-time match tracking system.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">React Native</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">Redux</span>
-            <span class="tech-tag">REST API</span>
+      <li class="project-item active" data-filter-item data-category="applications">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Brawlhalla</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Brawlhalla</h3>
+            <p class="project-category">Applications</p>
+            <p class="project-description">Gaming companion app with player stats, tournament brackets, and real-time match tracking system.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span><span class="tech-tag">Firebase</span><span class="tech-tag">Redux</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="web design">
-        <a href="https://dsm-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-          </figure>
-
-          <h3 class="project-title">DSM.</h3>
-
-          <p class="project-category">Web design</p>
-
-          <p class="project-description">
-            Comprehensive design system with reusable components, style guides, and documentation for enterprise applications.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">Figma</span>
-            <span class="tech-tag">Storybook</span>
-            <span class="tech-tag">Sass</span>
-            <span class="tech-tag">TypeScript</span>
+      <li class="project-item active" data-filter-item data-category="web design">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-5.png" alt="dsm." loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">DSM.</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">DSM.</h3>
+            <p class="project-category">Web design</p>
+            <p class="project-description">Comprehensive design system with reusable components, style guides, and documentation for enterprise applications.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Figma</span><span class="tech-tag">Storybook</span><span class="tech-tag">Sass</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="web design">
-        <a href="https://metaspark-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">MetaSpark</h3>
-
-          <p class="project-category">Web design</p>
-
-          <p class="project-description">
-            Creative agency landing page with stunning animations, interactive portfolio showcase, and contact forms.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">GSAP</span>
-            <span class="tech-tag">jQuery</span>
+      <li class="project-item active" data-filter-item data-category="web design">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-6.png" alt="metaspark" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">MetaSpark</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">MetaSpark</h3>
+            <p class="project-category">Web design</p>
+            <p class="project-description">Creative agency landing page with stunning animations, interactive portfolio showcase, and contact forms.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">GSAP</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="web development">
-        <a href="https://summary-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Summary</h3>
-
-          <p class="project-category">Web development</p>
-
-          <p class="project-description">
-            AI-powered content summarization tool that processes articles and documents into concise, digestible summaries.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Flask</span>
-            <span class="tech-tag">NLP</span>
-            <span class="tech-tag">TensorFlow</span>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-7.png" alt="summary" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Summary</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Summary</h3>
+            <p class="project-category">Web development</p>
+            <p class="project-description">AI-powered content summarization tool that processes articles and documents into concise, digestible summaries.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">NLP</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="applications">
-        <a href="https://taskmanager-app.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Task Manager</h3>
-
-          <p class="project-category">Applications</p>
-
-          <p class="project-description">
-            Collaborative task management application with team boards, deadline tracking, and productivity analytics.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">Angular</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">Socket.io</span>
+      <li class="project-item active" data-filter-item data-category="applications">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Task Manager</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Task Manager</h3>
+            <p class="project-category">Applications</p>
+            <p class="project-description">Collaborative task management application with team boards, deadline tracking, and productivity analytics.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Angular</span><span class="tech-tag">Node.js</span><span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
-      <li class="project-item  active" data-filter-item data-category="web development">
-        <a href="https://arrival-project.example.com" target="_blank" rel="noopener noreferrer">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Arrival</h3>
-
-          <p class="project-category">Web development</p>
-
-          <p class="project-description">
-            Travel booking platform with interactive maps, hotel recommendations, and itinerary planning features.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech-tag">Next.js</span>
-            <span class="tech-tag">Tailwind CSS</span>
-            <span class="tech-tag">Prisma</span>
-            <span class="tech-tag">Google Maps API</span>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <div class="project-flip-card">
+          <div class="project-card-front content-card">
+            <figure class="project-img"><img src="./assets/images/project-9.png" alt="arrival" loading="lazy"></figure>
+            <div class="project-title-wrapper"><h3 class="project-title">Arrival</h3></div>
           </div>
-
-        </a>
+          <div class="project-card-back content-card">
+            <h3 class="project-title">Arrival</h3>
+            <p class="project-category">Web development</p>
+            <p class="project-description">Travel booking platform with interactive maps, hotel recommendations, and itinerary planning features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span><span class="tech-tag">Tailwind CSS</span><span class="tech-tag">Prisma</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-action-btn"><ion-icon name="eye-outline"></ion-icon> Live Demo</a>
+              <a href="#" class="project-action-btn"><ion-icon name="logo-github"></ion-icon> Source Code</a>
+            </div>
+          </div>
+        </div>
       </li>
 
     </ul>
@@ -1035,1314 +965,178 @@ I constantly strive to enhance my skills and embrace emerging trends in the indu
 
 </article>
 
-<style>
-/* Additional styles for the enhanced portfolio */
-.project-description {
-  font-size: 0.875rem;
-  color: var(--light-gray-70);
-  line-height: 1.6;
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-.tech-tag {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: var(--bg-gradient-onyx);
-  border: 1px solid var(--jet);
-  border-radius: 12px;
-  font-size: 0.75rem;
-  color: var(--light-gray);
-  font-weight: 500;
-  transition: all 0.25s ease;
-}
-
-.project-item:hover .tech-tag {
-  border-color: var(--orange-yellow-crayola);
-  color: var(--orange-yellow-crayola);
-}
-
-.project-item a {
-  text-decoration: none;
-}
-
-/* Ensure proper spacing */
-.project-title {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-category {
-  margin-bottom: 0.5rem;
-}
-</style>
-
       <!--
         - #BLOG
       -->
 
-     <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Blog</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background: #0f0f0f;
-      color: #e4e4e7;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    /* Header */
-    .blog-header {
-      text-align: center;
-      margin-bottom: 3rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #27272a;
-    }
-
-    .blog-header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .blog-header p {
-      color: #a1a1aa;
-      font-size: 1.1rem;
-    }
-
-    /* Search and Filter Bar */
-    .controls {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .search-box {
-      flex: 1;
-      min-width: 250px;
-      position: relative;
-    }
-
-    .search-box input {
-      width: 100%;
-      padding: 0.875rem 1rem 0.875rem 3rem;
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 12px;
-      color: #e4e4e7;
-      font-size: 0.95rem;
-      transition: all 0.3s;
-    }
-
-    .search-box input:focus {
-      outline: none;
-      border-color: #667eea;
-      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-    }
-
-    .search-icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #71717a;
-    }
-
-    .filter-tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .filter-tag {
-      padding: 0.5rem 1rem;
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 8px;
-      color: #a1a1aa;
-      cursor: pointer;
-      transition: all 0.3s;
-      font-size: 0.9rem;
-    }
-
-    .filter-tag:hover {
-      border-color: #667eea;
-      color: #667eea;
-    }
-
-    .filter-tag.active {
-      background: #667eea;
-      color: white;
-      border-color: #667eea;
-    }
-
-    /* Blog Grid */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    .blog-card {
-      background: #18181b;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid #27272a;
-      transition: all 0.3s;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .blog-card:hover {
-      transform: translateY(-4px);
-      border-color: #667eea;
-      box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
-    }
-
-    .blog-banner {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .blog-content {
-      padding: 1.5rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .blog-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-      font-size: 0.85rem;
-    }
-
-    .blog-category {
-      padding: 0.25rem 0.75rem;
-      background: rgba(102, 126, 234, 0.15);
-      color: #667eea;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-
-    .blog-date {
-      color: #71717a;
-    }
-
-    .blog-title {
-      font-size: 1.5rem;
-      margin-bottom: 0.75rem;
-      color: #fafafa;
-      line-height: 1.3;
-    }
-
-    .blog-excerpt {
-      color: #a1a1aa;
-      margin-bottom: 1rem;
-      flex: 1;
-    }
-
-    .blog-tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-top: auto;
-    }
-
-    .tag {
-      padding: 0.25rem 0.625rem;
-      background: #27272a;
-      color: #a1a1aa;
-      border-radius: 4px;
-      font-size: 0.8rem;
-    }
-
-    .read-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: #667eea;
-      font-weight: 600;
-      margin-top: 1rem;
-      text-decoration: none;
-    }
-
-    /* Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.9);
-      z-index: 1000;
-      overflow-y: auto;
-      padding: 2rem;
-    }
-
-    .modal.active {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
-
-    .modal-content {
-      background: #18181b;
-      border-radius: 16px;
-      max-width: 900px;
-      width: 100%;
-      margin: 2rem auto;
-      border: 1px solid #27272a;
-    }
-
-    .modal-header {
-      padding: 2rem;
-      border-bottom: 1px solid #27272a;
-      position: relative;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      background: #27272a;
-      border: none;
-      color: #e4e4e7;
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1.5rem;
-      line-height: 1;
-      transition: all 0.3s;
-    }
-
-    .close-btn:hover {
-      background: #667eea;
-    }
-
-    .modal-body {
-      padding: 0;
-    }
-
-    .article-header-image {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-
-    .article-container {
-      padding: 2rem;
-    }
-
-    .article-info {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #27272a;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .author-info {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .author-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-    }
-
-    .author-details h4 {
-      color: #fafafa;
-      margin-bottom: 0.25rem;
-    }
-
-    .author-details p {
-      color: #71717a;
-      font-size: 0.9rem;
-    }
-
-    .read-time {
-      color: #71717a;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .share-buttons {
-      margin-left: auto;
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .share-btn {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      background: #27272a;
-      border: none;
-      color: #a1a1aa;
-      cursor: pointer;
-      transition: all 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .share-btn:hover {
-      background: #667eea;
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    .table-of-contents {
-      background: #09090b;
-      border: 1px solid #27272a;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .table-of-contents h3 {
-      color: #fafafa;
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .toc-list {
-      list-style: none;
-    }
-
-    .toc-list li {
-      margin-bottom: 0.5rem;
-    }
-
-    .toc-list a {
-      color: #a1a1aa;
-      text-decoration: none;
-      transition: color 0.3s;
-      display: block;
-      padding: 0.25rem 0;
-    }
-
-    .toc-list a:hover {
-      color: #667eea;
-    }
-
-    .article-content {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #d4d4d8;
-    }
-
-    .article-content h2 {
-      margin: 2rem 0 1rem;
-      color: #fafafa;
-    }
-
-    .article-content p {
-      margin-bottom: 1.5rem;
-    }
-
-    .article-content code {
-      background: #09090b;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      color: #fbbf24;
-      font-family: 'Courier New', monospace;
-      font-size: 0.9em;
-    }
-
-    .article-content pre {
-      background: #09090b;
-      padding: 1.5rem;
-      border-radius: 12px;
-      overflow-x: auto;
-      margin: 1.5rem 0;
-      border: 1px solid #27272a;
-    }
-
-    .article-content pre code {
-      background: none;
-      padding: 0;
-      color: #e4e4e7;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .code-header {
-      background: #18181b;
-      padding: 0.75rem 1.5rem;
-      border-radius: 12px 12px 0 0;
-      border: 1px solid #27272a;
-      border-bottom: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0;
-    }
-
-    .code-lang {
-      color: #71717a;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    .copy-btn {
-      background: transparent;
-      border: 1px solid #27272a;
-      color: #a1a1aa;
-      padding: 0.25rem 0.75rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.8rem;
-      transition: all 0.3s;
-    }
-
-    .copy-btn:hover {
-      border-color: #667eea;
-      color: #667eea;
-    }
-
-    .article-content pre {
-      margin-top: 0;
-      border-radius: 0 0 12px 12px;
-    }
-
-    .article-content pre:not(.with-header) {
-      border-radius: 12px;
-    }
-
-    .article-image {
-      width: 100%;
-      border-radius: 12px;
-      margin: 2rem 0;
-      border: 1px solid #27272a;
-    }
-
-    .image-caption {
-      text-align: center;
-      color: #71717a;
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-      font-style: italic;
-    }
-
-    .comments-section {
-      padding: 2rem;
-      border-top: 1px solid #27272a;
-      background: #09090b;
-    }
-
-    .comments-section h3 {
-      color: #fafafa;
-      margin-bottom: 1.5rem;
-    }
-
-    .comment-form {
-      margin-bottom: 2rem;
-    }
-
-    .form-group {
-      margin-bottom: 1rem;
-    }
-
-    .form-group label {
-      display: block;
-      color: #a1a1aa;
-      margin-bottom: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 8px;
-      padding: 0.75rem;
-      color: #e4e4e7;
-      font-family: inherit;
-      transition: all 0.3s;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: #667eea;
-      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    .submit-btn {
-      background: #667eea;
-      color: white;
-      border: none;
-      padding: 0.75rem 2rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: all 0.3s;
-    }
-
-    .submit-btn:hover {
-      background: #5568d3;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-    }
-
-    .comments-list {
-      margin-top: 2rem;
-    }
-
-    .comment {
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .comment-header {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-    }
-
-    .comment-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-    }
-
-    .comment-info h4 {
-      color: #fafafa;
-      font-size: 0.95rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .comment-date {
-      color: #71717a;
-      font-size: 0.85rem;
-    }
-
-    .comment-text {
-      color: #d4d4d8;
-      line-height: 1.6;
-    }
-
-    .related-posts {
-      padding: 2rem;
-      border-top: 1px solid #27272a;
-    }
-
-    .related-posts h3 {
-      margin-bottom: 1.5rem;
-      color: #fafafa;
-    }
-
-    .related-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
-    .related-card {
-      background: #09090b;
-      padding: 1rem;
-      border-radius: 12px;
-      border: 1px solid #27272a;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-
-    .related-card:hover {
-      border-color: #667eea;
-    }
-
-    .related-title {
-      font-size: 1rem;
-      color: #fafafa;
-      margin-bottom: 0.5rem;
-    }
-
-    .related-excerpt {
-      font-size: 0.9rem;
-      color: #71717a;
-    }
-
-    .no-results {
-      text-align: center;
-      padding: 4rem 2rem;
-      color: #71717a;
-    }
-
-    @media (max-width: 768px) {
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .blog-header h1 {
-        font-size: 2rem;
-      }
-
-      .controls {
-        flex-direction: column;
-      }
-
-      .search-box {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header class="blog-header">
-
-    </header>
-      <h1>Blog & Articles</h1>
-      <p>Insights, tutorials, and thoughts on design, development, and technology</p>
-    </header>
-
-    <div class="controls">
-      <div class="search-box">
-        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"></circle>
-          <path d="m21 21-4.35-4.35"></path>
-        </svg>
-        <input type="text" id="searchInput" placeholder="Search articles...">
-      </div>
-      <div class="filter-tags">
-        <button class="filter-tag active" data-filter="all">All</button>
-        <button class="filter-tag" data-filter="Design">Design</button>
-        <button class="filter-tag" data-filter="Development">Development</button>
-        <button class="filter-tag" data-filter="Tutorial">Tutorial</button>
-        <button class="filter-tag" data-filter="News">News</button>
-      </div>
-    </div>
-
-    <div class="blog-grid" id="blogGrid"></div>
-    <div class="no-results" id="noResults" style="display: none;">
-      <h3>No articles found</h3>
-      <p>Try adjusting your search or filter criteria</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="close-btn" onclick="closeModal()">&times;</button>
-        <div class="blog-meta" id="modalMeta"></div>
-        <h1 class="blog-title" id="modalTitle"></h1>
-      </div>
-      <div class="modal-body">
-        <img id="modalImage" class="article-header-image" alt="">
-        <div class="article-container">
-          <div class="article-info">
-            <div class="author-info">
-              <div class="author-avatar">JD</div>
-              <div class="author-details">
-                <h4>Teta Huguette</h4>
-                <p>Software Engineering</p>
-              </div>
-            </div>
-            <div class="read-time">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
+      <article class="blog" data-page="blog">
+        <div class="container">
+          <header class="blog-header">
+            <h1>Blog & Articles</h1>
+            <p>Insights, tutorials, and thoughts on design, development, and technology</p>
+          </header>
+      
+          <div class="controls">
+            <div class="search-box">
+              <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
               </svg>
-              <span>5 min read</span>
+              <input type="text" id="searchInput" placeholder="Search articles...">
             </div>
-            <div class="share-buttons">
-              <button class="share-btn" onclick="shareOn('twitter')" title="Share on X/Twitter">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-              </button>
-              <button class="share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </button>
-              <button class="share-btn" onclick="shareOn('facebook')" title="Share on Facebook">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-              </button>
+            <div class="filter-tags">
+              <button class="filter-tag active" data-filter="all">All</button>
+              <button class="filter-tag" data-filter="Design">Design</button>
+              <button class="filter-tag" data-filter="Development">Development</button>
+              <button class="filter-tag" data-filter="Tutorial">Tutorial</button>
+              <button class="filter-tag" data-filter="News">News</button>
             </div>
           </div>
-          
-          <div class="table-of-contents" id="tableOfContents" style="display: none;">
-            <h3>Table of Contents</h3>
-            <ul class="toc-list" id="tocList"></ul>
+      
+          <div class="blog-grid" id="blogGrid"></div>
+          <div class="no-results" id="noResults" style="display: none;">
+            <h3>No articles found</h3>
+            <p>Try adjusting your search or filter criteria.</p>
           </div>
-          
-          <div class="article-content" id="modalContent"></div>
         </div>
-      </div>
-      <div class="comments-section">
-        <h3>Comments (<span id="commentCount">0</span>)</h3>
-        
-        <form class="comment-form" onsubmit="submitComment(event)">
-          <div class="form-group">
-            <label for="commentName">Name *</label>
-            <input type="text" id="commentName" required placeholder="Your name">
+      
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close-btn" onclick="closeModal()">&times;</button>
+              <div class="blog-meta" id="modalMeta"></div>
+              <h1 class="blog-title" id="modalTitle"></h1>
+            </div>
+            <div class="modal-body">
+              <img id="modalImage" class="article-header-image" alt="">
+              <div class="article-container">
+                <div class="article-info">
+                  <div class="author-info">
+                    <div class="author-avatar">JD</div>
+                    <div class="author-details">
+                      <h4>Teta Huguette</h4>
+                      <p>Software Engineering</p>
+                    </div>
+                  </div>
+                  <div class="read-time">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>5 min read</span>
+                  </div>
+                  <div class="share-buttons">
+                    <button class="share-btn" onclick="shareOn('twitter')" title="Share on X/Twitter">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      </svg>
+                    </button>
+                    <button class="share-btn" onclick="shareOn('linkedin')" title="Share on LinkedIn">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </button>
+                    <button class="share-btn" onclick="shareOn('facebook')" title="Share on Facebook">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="table-of-contents" id="tableOfContents" style="display: none;">
+                  <h3>Table of Contents</h3>
+                  <ul class="toc-list" id="tocList"></ul>
+                </div>
+                
+                <div class="article-content" id="modalContent"></div>
+              </div>
+            </div>
+            <div class="comments-section">
+              <h3>Comments (<span id="commentCount">0</span>)</h3>
+              
+              <div class="comment-form" onsubmit="submitComment(event)">
+                <div class="form-group">
+                  <label for="commentName">Name *</label>
+                  <input type="text" id="commentName" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="commentEmail">Email *</label>
+                  <input type="email" id="commentEmail" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="commentText">Comment *</label>
+                  <textarea id="commentText" required placeholder="Share your thoughts..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Comment</button>
+              </form>
+              
+              <div class="comments-list" id="commentsList"></div>
+            </div>
+            <div class="related-posts">
+              <h3>Related Articles</h3>
+              <div class="related-grid" id="relatedPosts"></div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="commentEmail">Email *</label>
-            <input type="email" id="commentEmail" required placeholder="your.email@example.com">
+        </div>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039235.179291774!2d28.5371634791918!3d-2.013457919318242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c295df4dd4563f%3A0x51b39134bd82c318!2sRwanda!5e0!3m2!1sen!2sus!4v1624568355932!5m2!1sen!2sus" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form content-card">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <div class="form-input-group">
+                <div class="icon-box">
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              </div>
+              <div class="form-input-group">
+                 <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              </div>
+            </div>
+            <div class="form-input-group">
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            </div>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
           </div>
-          <div class="form-group">
-            <label for="commentText">Comment *</label>
-            <textarea id="commentText" required placeholder="Share your thoughts..."></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Post Comment</button>
-        </form>
-        
-        <div class="comments-list" id="commentsList"></div>
-      </div>
-      <div class="related-posts">
-        <h3>Related Articles</h3>
-        <div class="related-grid" id="relatedPosts"></div>
-      </div>
+        </section>
+      </article>
+
     </div>
-  </div>
 
-  <script>
-    const blogPosts = [
-      {
-        id: 1,
-        title: "Design Conferences in 2022",
-        category: "Design",
-        date: "2022-02-23",
-        excerpt: "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
-        tags: ["Events", "Networking", "Design"],
-        image: "./assets/images/blog-1.jpg",
-        content: `
-          <p>Design conferences offer invaluable opportunities for professional growth and networking. In 2022, the landscape of design events has evolved significantly, adapting to new formats and technologies.</p>
-          
-          <h2 id="top-conferences">Top Conferences to Attend</h2>
-          <p>The most impactful design conferences combine keynote presentations, workshops, and networking opportunities. Here's what makes them essential for designers looking to advance their careers and stay current with industry trends.</p>
-          
-          <div class="code-header">
-            <span class="code-lang">JavaScript</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre class="with-header"><code>// Example: Organizing conference schedule
-const conferences = {
-  'Adobe MAX': { 
-    date: 'October', 
-    location: 'Los Angeles',
-    focus: 'Creative Cloud & Design Tools'
-  },
-  'Config': { 
-    date: 'June', 
-    location: 'Virtual',
-    focus: 'Product Design & Figma'
-  },
-  'AIGA Design': { 
-    date: 'September', 
-    location: 'Chicago',
-    focus: 'Professional Development'
-  }
-};
+  </main>
 
-// Filter conferences by date
-const upcomingConferences = Object.entries(conferences)
-  .filter(([name, details]) => {
-    return new Date(details.date) > new Date();
-  });</code></pre>
-          
-          <h2 id="networking-benefits">Networking Benefits</h2>
-          <p>Beyond the sessions and workshops, conferences provide unparalleled networking opportunities. You'll meet industry leaders, potential collaborators, and peers facing similar challenges. Many attendees report that the connections made during coffee breaks and evening events are just as valuable as the formal programming.</p>
-          
-          <h2 id="key-takeaways">Key Takeaways</h2>
-          <p>Attending conferences helps you stay current with industry trends, learn new tools and techniques, and build meaningful connections with other professionals. The investment in conference attendance typically pays dividends through improved skills, fresh perspectives, and career opportunities.</p>
-        `
-      },
-      {
-        id: 2,
-        title: "Best Fonts Every Designer Should Know",
-        category: "Design",
-        date: "2022-02-23",
-        excerpt: "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.",
-        tags: ["Typography", "Resources", "Design"],
-        image: "./assets/images/blog-2.jpg",
-        content: `
-          <p>Typography is the backbone of visual design. Choosing the right font can make or break your design project. Understanding font psychology, readability, and technical implementation is crucial for every designer.</p>
-          
-          <h2 id="essential-categories">Essential Font Categories</h2>
-          <p>Professional designers should be familiar with various font categories: serif, sans-serif, display, and monospace fonts. Each serves a specific purpose and conveys different emotions and messages to your audience.</p>
-          
-          <div class="code-header">
-            <span class="code-lang">CSS</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre class="with-header"><code>/* CSS Font Stack Example */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-code {
-  font-family: 'Fira Code', 'Courier New', monospace;
-  font-size: 0.9em;
-}</code></pre>
-          
-          <h2 id="modern-approaches">Modern Web Typography</h2>
-          <p>Modern web design relies heavily on system fonts and variable fonts for performance and flexibility. Variable fonts allow you to adjust weight, width, and other attributes along a continuous axis, giving you unprecedented control with a single font file.</p>
-        `
-      },
-      {
-        id: 3,
-        title: "Design Digest #80",
-        category: "News",
-        date: "2022-02-23",
-        excerpt: "Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.",
-        tags: ["Weekly", "Inspiration", "Resources"],
-        image: "./assets/images/blog-3.jpg",
-        content: `
-          <p>Welcome to this week's design digest, featuring the latest trends, tools, and inspiration from the design community.</p>
-          
-          <h2>This Week's Highlights</h2>
-          <p>We've curated the best design work, articles, and resources from around the web. Discover new techniques and stay inspired.</p>
-          
-          <p>Featured projects showcase innovative approaches to user interface design, with emphasis on accessibility and user experience.</p>
-        `
-      },
-      {
-        id: 4,
-        title: "UI Interactions of the Week",
-        category: "Development",
-        date: "2022-02-23",
-        excerpt: "Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.",
-        tags: ["UI/UX", "Animation", "Code"],
-        image: "./assets/images/blog-4.jpg",
-        content: `
-          <p>Micro-interactions enhance user experience by providing feedback and creating delightful moments in digital products. These small, purposeful animations guide users and make interfaces feel responsive and alive.</p>
-          
-          <h2 id="smooth-animations">Implementing Smooth Animations</h2>
-          <p>Modern CSS and JavaScript enable sophisticated animations with minimal code. The key is understanding timing functions, transforms, and performance optimization. Here's a practical example:</p>
-          
-          <div class="code-header">
-            <span class="code-lang">JavaScript</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre class="with-header"><code>// Simple hover animation with JavaScript
-const card = document.querySelector('.card');
-
-card.addEventListener('mouseenter', () => {
-  card.style.transform = 'translateY(-8px)';
-  card.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
-  card.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.2)';
-});
-
-card.addEventListener('mouseleave', () => {
-  card.style.transform = 'translateY(0)';
-  card.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
-});
-
-// Using Intersection Observer for scroll animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate-in');
-    }
-  });
-}, { threshold: 0.1 });</code></pre>
-          
-          <h2 id="best-practices">Best Practices</h2>
-          <p>Keep animations subtle and purposeful. They should enhance usability, not distract from content. Aim for animations between 200-500ms for most interactions. Always respect user preferences for reduced motion.</p>
-          
-          <h2 id="performance">Performance Considerations</h2>
-          <p>Use CSS transforms and opacity for the smoothest animations, as these properties are GPU-accelerated. Avoid animating properties like width, height, or top/left which trigger layout recalculations.</p>
-        `
-      },
-      {
-        id: 5,
-        title: "The Forgotten Art of Spacing",
-        category: "Tutorial",
-        date: "2022-02-23",
-        excerpt: "Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        tags: ["Layout", "Typography", "Tutorial"],
-        image: "./assets/images/blog-5.jpg",
-        content: `
-          <p>White space, or negative space, is one of the most powerful tools in a designer's arsenal. Yet it's often overlooked or underutilized. Proper use of spacing can elevate a design from good to exceptional.</p>
-          
-          <h2 id="breathing-room">The Power of Breathing Room</h2>
-          <p>Proper spacing creates visual hierarchy, improves readability, and gives your design a premium feel. It's not empty space—it's an active design element that guides the user's eye and creates rhythm. Here's how to implement it systematically:</p>
-          
-          <div class="code-header">
-            <span class="code-lang">CSS</span>
-            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-          </div>
-          <pre class="with-header"><code>/* Spacing system using CSS custom properties */
-:root {
-  --space-xs: 0.25rem;   /* 4px */
-  --space-sm: 0.5rem;    /* 8px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 2rem;      /* 32px */
-  --space-xl: 4rem;      /* 64px */
-  --space-2xl: 8rem;     /* 128px */
-}
-
-.content {
-  padding: var(--space-lg);
-  margin-bottom: var(--space-xl);
-}
-
-.section {
-  margin-bottom: var(--space-2xl);
-}
-
-/* Using the 8pt grid system */
-.card {
-  padding: calc(var(--space-md) * 2);
-  gap: var(--space-md);
-}</code></pre>
-          
-          <h2 id="practical-guidelines">Practical Guidelines</h2>
-          <p>Use a consistent spacing scale throughout your design. This creates rhythm and makes your interface feel cohesive. The 8-point grid system is popular because it aligns well with most screen densities and makes spacing decisions easier.</p>
-          
-          <h2 id="common-mistakes">Common Mistakes to Avoid</h2>
-          <p>Don't use arbitrary spacing values. Stick to your spacing scale. Also, avoid cramming too much content into a small space—if something feels crowded, it probably is. Remember: white space is not wasted space.</p>
-        `
-      },
-      {
-        id: 6,
-        title: "Design Digest #79",
-        category: "News",
-        date: "2022-02-23",
-        excerpt: "Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.",
-        tags: ["Weekly", "Trends", "Inspiration"],
-        image: "./assets/images/blog-6.jpg",
-        content: `
-          <p>Another week of outstanding design work from talented creators around the world. This digest focuses on emerging trends in digital design.</p>
-          
-          <h2>Trending Techniques</h2>
-          <p>Glass morphism, 3D elements, and bold typography continue to dominate modern web design. Learn how top designers are implementing these trends.</p>
-          
-          <p>We also explore sustainable design practices and how designers are considering environmental impact in their work.</p>
-        `
-      }
-    ];
-
-    let currentFilter = 'all';
-    let currentSearch = '';
-    let currentPostId = null;
-    let comments = {};
-
-    function renderBlogs() {
-      const grid = document.getElementById('blogGrid');
-      const noResults = document.getElementById('noResults');
-      
-      const filtered = blogPosts.filter(post => {
-        const matchesFilter = currentFilter === 'all' || post.category === currentFilter;
-        const matchesSearch = currentSearch === '' || 
-          post.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
-          post.excerpt.toLowerCase().includes(currentSearch.toLowerCase()) ||
-          post.tags.some(tag => tag.toLowerCase().includes(currentSearch.toLowerCase()));
-        
-        return matchesFilter && matchesSearch;
-      });
-
-      if (filtered.length === 0) {
-        grid.style.display = 'none';
-        noResults.style.display = 'block';
-      } else {
-        grid.style.display = 'grid';
-        noResults.style.display = 'none';
-        
-        grid.innerHTML = filtered.map(post => `
-          <div class="blog-card" onclick="openModal(${post.id})">
-            <img src="${post.image}" alt="${post.title}" class="blog-banner">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-category">${post.category}</span>
-                <span class="blog-date">${new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-              </div>
-              <h3 class="blog-title">${post.title}</h3>
-              <p class="blog-excerpt">${post.excerpt}</p>
-              <div class="blog-tags">
-                ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-              </div>
-              <a class="read-more">
-                Read more 
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        `).join('');
-      }
-    }
-
-    function openModal(id) {
-      const post = blogPosts.find(p => p.id === id);
-      if (!post) return;
-
-      currentPostId = id;
-
-      document.getElementById('modalImage').src = post.image;
-      document.getElementById('modalImage').alt = post.title;
-      document.getElementById('modalMeta').innerHTML = `
-        <span class="blog-category">${post.category}</span>
-        <span class="blog-date">${new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-      `;
-      document.getElementById('modalTitle').textContent = post.title;
-      document.getElementById('modalContent').innerHTML = post.content;
-
-      // Generate table of contents
-      const headings = document.getElementById('modalContent').querySelectorAll('h2[id]');
-      const toc = document.getElementById('tableOfContents');
-      const tocList = document.getElementById('tocList');
-      
-      if (headings.length > 0) {
-        toc.style.display = 'block';
-        tocList.innerHTML = Array.from(headings).map(h => 
-          `<li><a href="#${h.id}" onclick="scrollToSection('${h.id}')">${h.textContent}</a></li>`
-        ).join('');
-      } else {
-        toc.style.display = 'none';
-      }
-
-      // Load and display comments
-      renderComments(id);
-
-      const related = blogPosts
-        .filter(p => p.id !== id && (p.category === post.category || p.tags.some(tag => post.tags.includes(tag))))
-        .slice(0, 3);
-
-      document.getElementById('relatedPosts').innerHTML = related.map(p => `
-        <div class="related-card" onclick="openModal(${p.id})">
-          <h4 class="related-title">${p.title}</h4>
-          <p class="related-excerpt">${p.excerpt}</p>
-        </div>
-      `).join('');
-
-      document.getElementById('modal').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      document.getElementById('modal').classList.remove('active');
-      document.body.style.overflow = 'auto';
-      currentPostId = null;
-      document.getElementById('commentName').value = '';
-      document.getElementById('commentEmail').value = '';
-      document.getElementById('commentText').value = '';
-    }
-
-    function scrollToSection(id) {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-
-    function copyCode(button) {
-      const codeBlock = button.closest('.code-header').nextElementSibling;
-      const code = codeBlock.textContent;
-      
-      navigator.clipboard.writeText(code).then(() => {
-        const originalText = button.textContent;
-        button.textContent = 'Copied!';
-        setTimeout(() => {
-          button.textContent = originalText;
-        }, 2000);
-      });
-    }
-
-    function shareOn(platform) {
-      const post = blogPosts.find(p => p.id === currentPostId);
-      if (!post) return;
-
-      const url = encodeURIComponent(window.location.href);
-      const text = encodeURIComponent(post.title);
-      
-      const shareUrls = {
-        twitter: `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
-        linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
-        facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`
-      };
-
-      if (shareUrls[platform]) {
-        window.open(shareUrls[platform], '_blank', 'width=600,height=400');
-      }
-    }
-
-    function submitComment(event) {
-      event.preventDefault();
-      
-      const name = document.getElementById('commentName').value;
-      const email = document.getElementById('commentEmail').value;
-      const text = document.getElementById('commentText').value;
-      
-      if (!comments[currentPostId]) {
-        comments[currentPostId] = [];
-      }
-      
-      comments[currentPostId].push({
-        id: Date.now(),
-        name: name,
-        email: email,
-        text: text,
-        date: new Date()
-      });
-      
-      renderComments(currentPostId);
-      
-      document.getElementById('commentName').value = '';
-      document.getElementById('commentEmail').value = '';
-      document.getElementById('commentText').value = '';
-    }
-
-    function renderComments(postId) {
-      const postComments = comments[postId] || [];
-      const count = postComments.length;
-      
-      document.getElementById('commentCount').textContent = count;
-      
-      const commentsList = document.getElementById('commentsList');
-      
-      if (count === 0) {
-        commentsList.innerHTML = '<p style="color: #71717a; text-align: center; padding: 2rem;">No comments yet. Be the first to share your thoughts!</p>';
-      } else {
-        commentsList.innerHTML = postComments.map(comment => `
-          <div class="comment">
-            <div class="comment-header">
-              <div class="comment-avatar">${comment.name.charAt(0).toUpperCase()}</div>
-              <div class="comment-info">
-                <h4>${comment.name}</h4>
-                <span class="comment-date">${formatDate(comment.date)}</span>
-              </div>
-            </div>
-            <p class="comment-text">${comment.text}</p>
-          </div>
-        `).join('');
-      }
-    }
-
-    function formatDate(date) {
-      const now = new Date();
-      const diff = now - date;
-      const minutes = Math.floor(diff / 60000);
-      const hours = Math.floor(diff / 3600000);
-      const days = Math.floor(diff / 86400000);
-      
-      if (minutes < 1) return 'Just now';
-      if (minutes < 60) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
-      if (hours < 24) return `${hours} hour${hours > 1 ? 's' : ''} ago`;
-      if (days < 7) return `${days} day${days > 1 ? 's' : ''} ago`;
-      
-      return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-    }
-
-    document.querySelectorAll('.filter-tag').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.dataset.filter;
-        renderBlogs();
-      });
-    });
-
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-      currentSearch = e.target.value;
-      renderBlogs();
-    });
-
-    document.getElementById('modal').addEventListener('click', (e) => {
-      if (e.target.id === 'modal') closeModal();
-    });
-
-    renderBlogs();
-  </script>
-</body>
-</html>
-
-
-
-<!-- =========================
-        CONTACT
-========================= -->
-<!-- - #CONTACT --> <article class="contact" data-page="contact"> <header> <h2 class="h2 article-title">Contact</h2> can you make it professional and well structured </header> <section class="mapbox" data-mapbox> <figure> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd" width="400" height="300" loading="lazy"></iframe> </figure> </section> <section class="contact-form"> <h3 class="h3 form-title">Contact Form</h3> <form action="#" class="form" data-form> <div class="input-wrapper"> <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input> <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input> </div> <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea> <button class="form-btn" type="submit" disabled data-form-btn> <ion-icon name="paper-plane"></ion-icon> <span>Send Message</span> </button> </form> </section> </article> </div> </main>
+  <!--
+    - #BACK TO TOP
+  -->
+  <button class="back-to-top-btn" data-back-to-top-btn>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
 
   <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/typewriter.js"></script>
 
   <!--
     - ionicon link
